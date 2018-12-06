@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InicioAlumno">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Página Inicio - Alumno" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bienvenido: " />
+
+        <TextView
+            android:id="@+id/tvNombreIniA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btPagWebIniA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Página web"
+                android:onClick="pagWebRedirect"/>
+
+            <Button
+                android:id="@+id/btModificarIniA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="modificarRedirect"
+                android:text="Modificar" />
+
+            <Button
+                android:id="@+id/btBuscarIniA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="buscarRedirect"
+                android:text="Buscar" />
+
+            <Button
+                android:id="@+id/btBajaIniA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="baja"
+                android:text="Baja" />
+
+            <Button
+                android:id="@+id/btSalir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="inicioRedirect"
+                android:text="Salir Inicio Alumnos" />
+
+        </LinearLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
